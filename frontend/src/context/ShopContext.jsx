@@ -11,6 +11,7 @@ const ShopContextProvider = (props) =>{
     const [showSearch,setShowSearch]=useState(false);
     const [cartItems,setCartItems] = useState({});
     const navigate =useNavigate();
+    
     const addToCart = async(itemId,size) =>{
         let cartData = structuredClone(cartItems);
         if(!size){
